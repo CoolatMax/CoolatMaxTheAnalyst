@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50-Day Renewable Energy Data Analyst Study Plan</title>
+    <style>
+        :root {
+            --primary: #0d9488;
+            --primary-dark: #0f766e;
+            --secondary: #0284c7;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --accent: #f59e0b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+            color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.25rem;
+        }
+
+        header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .phase-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .phase-header {
+            background-color: #f1f5f9;
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .phase-header h2 {
+            margin: 0;
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+        }
+
+        .badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .day-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+            padding: 1.5rem;
+        }
+
+        .day-card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            background-color: var(--surface);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .day-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .day-number {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .day-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .day-details {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        .day-details li {
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>50-Day Renewable Energy Data Analyst Roadmap</h1>
+        <p>Tailored for Technical Writers transitioning into Remote Data Roles (EU/US Focus)</p>
+    </header>
+
+    <!-- PHASE 1 -->
+    <div class="phase-card">
+        <div class="phase-header">
+            <h2>Phase 1: Advanced SQL & Renewable Data Modeling</h2>
+            <span class="badge">Days 1 – 12</span>
+        </div>
+        <div class="day-grid">
+            <div class="day-card">
+                <div class="day-number">Day 1</div>
+                <div class="day-title">Relational Databases & SQL Setup</div>
+                <ul class="day-details">
+                    <li>Set up PostgreSQL & pgAdmin local environment.</li>
+                    <li>Understand schemas, tables, and datatypes (TIMESTAMP, NUMERIC).</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 2</div>
+                <div class="day-title">Filtering & Aggregations</div>
+                <ul class="day-details">
+                    <li>Master SELECT, WHERE, GROUP BY, HAVING.</li>
+                    <li>Calculate total grid load and generation peaks.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 3</div>
+                <div class="day-title">Multi-Table JOINS</div>
+                <ul class="day-details">
+                    <li>INNER, LEFT, RIGHT, FULL OUTER joins.</li>
+                    <li>Join power generation tables with plant metadata.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 4</div>
+                <div class="day-title">Subqueries & CTEs</div>
+                <ul class="day-details">
+                    <li>Write scalar subqueries and Common Table Expressions (WITH).</li>
+                    <li>Structure complex queries for clean data extraction.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 5</div>
+                <div class="day-title">Window Functions I</div>
+                <ul class="day-details">
+                    <li>OVER(), PARTITION BY, ORDER BY basics.</li>
+                    <li>Compute ROW_NUMBER() and RANK() for generation assets.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 6</div>
+                <div class="day-title">Window Functions II</div>
+                <ul class="day-details">
+                    <li>LAG(), LEAD(), and running totals (SUM OVER).</li>
+                    <li>Analyze hourly ramp rates and solar yield drop-offs.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 7</div>
+                <div class="day-title">Date & Time Manipulation</div>
+                <ul class="day-details">
+                    <li>DATE_TRUNC, EXTRACT, timezone handling (UTC vs CET).</li>
+                    <li>Aggregate hourly energy data into daily/monthly averages.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 8</div>
+                <div class="day-title">Conditional Logic & String Ops</div>
+                <ul class="day-details">
+                    <li>CASE WHEN statements for peak/off-peak pricing logic.</li>
+                    <li>Clean string fields in asset tracking logs.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 9</div>
+                <div class="day-title">Data Warehousing Concepts</div>
+                <ul class="day-details">
+                    <li>Star schema vs. Snowflake schema for energy utilities.</li>
+                    <li>Fact tables (generation) vs. Dimension tables (turbines, sites).</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 10</div>
+                <div class="day-title">ENTSO-E & Open Power Dataset Setup</div>
+                <ul class="day-details">
+                    <li>Download European grid generation data (Open Power System Data).</li>
+                    <li>Ingest CSV datasets into PostgreSQL tables.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 11</div>
+                <div class="day-title">SQL Mini-Project Execution</div>
+                <ul class="day-details">
+                    <li>Query solar vs. wind generation ratios across EU countries.</li>
+                    <li>Identify curtailment hours using advanced SQL logic.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 12</div>
+                <div class="day-title">SQL Portfolio Documentation</div>
+                <ul class="day-details">
+                    <li>Write optimized queries, add comments, push scripts to GitHub.</li>
+                    <li>Document methodology using technical writing standards.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE 2 -->
+    <div class="phase-card">
+        <div class="phase-header">
+            <h2>Phase 2: Python for Energy Data Analysis</h2>
+            <span class="badge">Days 13 – 25</span>
+        </div>
+        <div class="day-grid">
+            <div class="day-card">
+                <div class="day-number">Day 13</div>
+                <div class="day-title">Python Refresher & Pandas Basics</div>
+                <ul class="day-details">
+                    <li>Virtual environments, Jupyter Notebooks, Pandas DataFrames.</li>
+                    <li>Load CSV/Excel grid data, inspect head, info, describe.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 14</div>
+                <div class="day-title">Data Cleaning with Pandas</div>
+                <ul class="day-details">
+                    <li>Handle missing generation metrics (fillna, interpolate).</li>
+                    <li>Type casting, duplicate removal, renaming columns.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 15</div>
+                <div class="day-title">Filtering & Indexing</div>
+                <ul class="day-details">
+                    <li>loc, iloc, conditional filtering.</li>
+                    <li>Filter weather impact metrics during high wind events.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 16</div>
+                <div class="day-title">Groupby & Aggregations</div>
+                <ul class="day-details">
+                    <li>Multi-index grouping, aggregate functions (.agg).</li>
+                    <li>Compute monthly capacity factors for wind farms.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 17</div>
+                <div class="day-title">Time Series Analysis with Pandas</div>
+                <ul class="day-details">
+                    <li>DatetimeIndex, resampling (.resample('H'), 'D', 'M').</li>
+                    <li>Calculate 7-day rolling averages of solar output.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 18</div>
+                <div class="day-title">Data Visualization: Matplotlib & Seaborn</div>
+                <ul class="day-details">
+                    <li>Line plots, bar charts, heatmaps, subplots.</li>
+                    <li>Visualize daily load curves and generation profiles.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 19</div>
+                <div class="day-title">Working with Renewable APIs</div>
+                <ul class="day-details">
+                    <li>Fetch weather/solar irradiance data via requests module.</li>
+                    <li>Parse JSON responses into Pandas DataFrames.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 20</div>
+                <div class="day-title">SQL + Python Integration</div>
+                <ul class="day-details">
+                    <li>Connect Python to PostgreSQL using psycopg2/SQLAlchemy.</li>
+                    <li>Execute SQL queries directly into Pandas DataFrames.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 21</div>
+                <div class="day-title">Exploratory Data Analysis (EDA) Project</div>
+                <ul class="day-details">
+                    <li>Analyze Renewables.ninja or ENTSO-E hourly datasets.</li>
+                    <li>Identify seasonal variance in European wind production.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 22</div>
+                <div class="day-title">Statistical Analysis Basics</div>
+                <ul class="day-details">
+                    <li>Mean, median, variance, standard deviation, correlation.</li>
+                    <li>Correlate temperature anomalies with peak energy demand.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 23</div>
+                <div class="day-title">Feature Engineering for Energy</div>
+                <ul class="day-details">
+                    <li>Create peak/off-peak indicators, hour-of-day features.</li>
+                    <li>Calculate efficiency ratios and degradation indicators.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 24</div>
+                <div class="day-title">Automating Python Scripts</div>
+                <ul class="day-details">
+                    <li>Write reusable modular functions (.py scripts).</li>
+                    <li>Automate weekly report generation and chart saving.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 25</div>
+                <div class="day-title">GitHub Notebook Portfolio Build</div>
+                <ul class="day-details">
+                    <li>Clean Jupyter Notebook with markdown narratives.</li>
+                    <li>Commit codebase with a professional README.md.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE 3 -->
+    <div class="phase-card">
+        <div class="phase-header">
+            <h2>Phase 3: Business Intelligence & Energy Dashboards</h2>
+            <span class="badge">Days 26 – 38</span>
+        </div>
+        <div class="day-grid">
+            <div class="day-card">
+                <div class="day-number">Day 26</div>
+                <div class="day-title">Power BI / Tableau Setup</div>
+                <ul class="day-details">
+                    <li>Install Power BI Desktop or Tableau Public.</li>
+                    <li>Connect to PostgreSQL and CSV data sources.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 27</div>
+                <div class="day-title">Data Modeling in Power BI</div>
+                <ul class="day-details">
+                    <li>Build relationships between facts and dimensions.</li>
+                    <li>Create star schema data model for power plants.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 28</div>
+                <div class="day-title">DAX / Calculated Fields Basics</div>
+                <ul class="day-details">
+                    <li>Calculated columns vs measures.</li>
+                    <li>Write SUM, AVERAGE, COUNTROWS measures.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 29</div>
+                <div class="day-title">Advanced DAX Time Intelligence</div>
+                <ul class="day-details">
+                    <li>SAMEPERIODLASTYEAR, TOTALYTD, DATEADD.</li>
+                    <li>Calculate Year-over-Year renewable generation growth.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 30</div>
+                <div class="day-title">Interactive Visuals & Slicers</div>
+                <ul class="day-details">
+                    <li>Build line charts, stacked bar charts, KPIs, card views.</li>
+                    <li>Add time slicers, country filters, asset type toggles.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 31</div>
+                <div class="day-title">Dashboard Layout & UX Design</div>
+                <ul class="day-details">
+                    <li>Apply clean visual hierarchy, grid alignment, color themes.</li>
+                    <li>Design for executive decision-makers in clean tech.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 32</div>
+                <div class="day-title">Energy Domain Metrics Integration</div>
+                <ul class="day-details">
+                    <li>Build measures for Capacity Factor (%), Availability (%).</li>
+                    <li>Display CO2 offset estimations from clean generation.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 33</div>
+                <div class="day-title">Dashboard Optimization</div>
+                <ul class="day-details">
+                    <li>Optimize query performance and DAX calculations.</li>
+                    <li>Set up row-level security concepts.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 34</div>
+                <div class="day-title">Publishing & Portfolio Embedding</div>
+                <ul class="day-details">
+                    <li>Publish to Power BI Service / Tableau Public.</li>
+                    <li>Embed interactive dashboard link in GitHub portfolio.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 35</div>
+                <div class="day-title">Capstone Dashboard Draft</div>
+                <ul class="day-details">
+                    <li>Design 'European Renewable Grid Performance' dashboard.</li>
+                    <li>Incorporate wind, solar, and hydro generation streams.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 36</div>
+                <div class="day-title">Dashboard Refinement & Tooltips</div>
+                <ul class="day-details">
+                    <li>Add custom visual tooltips for plant-level detail.</li>
+                    <li>Perform visual QA checks across all filter states.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 37</div>
+                <div class="day-title">Data Storytelling Writeup</div>
+                <ul class="day-details">
+                    <li>Draft executive summary explaining key dashboard insights.</li>
+                    <li>Leverage technical writing skills to produce clarity.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 38</div>
+                <div class="day-title">Peer Review & Polish</div>
+                <ul class="day-details">
+                    <li>Gather feedback, refine layout and metric clarity.</li>
+                    <li>Finalize interactive web link for resume inclusion.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE 4 -->
+    <div class="phase-card">
+        <div class="phase-header">
+            <h2>Phase 4: Capstone Project & Remote Job Market Prep</h2>
+            <span class="badge">Days 39 – 50</span>
+        </div>
+        <div class="day-grid">
+            <div class="day-card">
+                <div class="day-number">Day 39</div>
+                <div class="day-title">Capstone Planning & Data Ingestion</div>
+                <ul class="day-details">
+                    <li>Select project: 'EU Grid Decarbonization & Renewable Reliability Analysis'.</li>
+                    <li>Assemble weather, load, and generation datasets.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 40</div>
+                <div class="day-title">ETL Pipeline in Python</div>
+                <ul class="day-details">
+                    <li>Clean, transform, and load raw datasets into PostgreSQL.</li>
+                    <li>Document transformation steps in repository docs.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 41</div>
+                <div class="day-title">SQL Analytics Layer</div>
+                <ul class="day-details">
+                    <li>Write production-grade CTEs and window functions.</li>
+                    <li>Calculate peak grid stress indicators and renewable penetration.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 42</div>
+                <div class="day-title">Final Dashboard Build</div>
+                <ul class="day-details">
+                    <li>Build complete interactive Power BI/Tableau dashboard.</li>
+                    <li>Highlight grid stability during peak renewable generation.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 43</div>
+                <div class="day-title">GitHub Master Repository</div>
+                <ul class="day-details">
+                    <li>Structure repo: /data, /sql, /python, /dashboard, README.md.</li>
+                    <li>Write a high-converting project writeup with embedded visuals.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 44</div>
+                <div class="day-title">Resume & LinkedIn Transformation</div>
+                <ul class="day-details">
+                    <li>Reflect Data Analyst identity while highlighting Technical Writing strength.</li>
+                    <li>Feature renewable domain knowledge and GitHub project links.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 45</div>
+                <div class="day-title">Filter Remote Job Dataset</div>
+                <ul class="day-details">
+                    <li>Extract target EU/US 'Worldwide' remote companies from Excel list.</li>
+                    <li>Filter for roles on Climatebase, Wellfound, and LinkedIn.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 46</div>
+                <div class="day-title">Cold Outreach Strategy</div>
+                <ul class="day-details">
+                    <li>Draft cold messages tailored for Clean Tech Analytics Managers.</li>
+                    <li>Emphasize data storytelling and civil/energy background.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 47</div>
+                <div class="day-title">SQL Technical Interview Prep</div>
+                <ul class="day-details">
+                    <li>Practice medium/hard SQL problems on LeetCode / StrataScratch.</li>
+                    <li>Focus on JOINs, GROUP BY, CTEs, and Window Functions.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 48</div>
+                <div class="day-title">Python & Case Study Interview Prep</div>
+                <ul class="day-details">
+                    <li>Practice data cleaning and aggregation challenges in Pandas.</li>
+                    <li>Review business metrics and capacity factor calculations.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 49</div>
+                <div class="day-title">Application Blitz (Batch 1)</div>
+                <ul class="day-details">
+                    <li>Apply to 15 targeted remote EU/US contractor positions.</li>
+                    <li>Send personalized messages to hiring managers on LinkedIn.</li>
+                </ul>
+            </div>
+            <div class="day-card">
+                <div class="day-number">Day 50</div>
+                <div class="day-title">Application Blitz (Batch 2) & Iteration</div>
+                <ul class="day-details">
+                    <li>Apply to 15 additional target positions.</li>
+                    <li>Track responses, refine resume based on feedback, continue interviewing.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>50-Day Transition Plan | Built for Data Analyst Aspirants in Clean Energy & Infrastructure</p>
+    </footer>
+</div>
+
+</body>
+</html>
