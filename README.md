@@ -9,13 +9,16 @@ My work spans the entire data lifecycle: from raw data extraction and engineerin
 ## Tech Stack & Skills
 
 ### Data Analysis & Scripting
-![Excel](https://shields.io)
-![SQL](https://shields.io)
-![Python](https://shields.io)
+![Excel](https://img.shields.io/badge/excel%20-%2334A853.svg?style=for-the-naged&logo=MSExcel&logoColor=Green)
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-%2334A853.svg?style=for-the-badge&logo=googlesheets&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%234479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Python](https://img.shields.io/badge/python-%233670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ### Business Intelligence & Visualization
-![Power BI](https://shields.io)
-![Tableau](https://shields.io)
+![Power Bi](https://img.shields.io/badge/Power%20Bi)
+![Tableau](https://img.shields.io/badge/Tableau)
+
 
 ### Cloud, DevOps & Engineering
 ![AWS](https://shields.io)
